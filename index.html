@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Interactive Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Responsive Interactive Dashboard</h1>
+
+  <!-- Image Carousel -->
+  <div class="carousel">
+    <img id="carouselImage" src="https://source.unsplash.com/300x200/?nature" alt="Carousel Image"/>
+    <button onclick="nextImage()">Next</button>
+  </div>
+
+  <!-- Quiz Section -->
+  <div class="quiz">
+    <h2 id="quizQuestion">Quiz loading...</h2>
+    <div id="quizOptions"></div>
+    <p id="quizResult"></p>
+  </div>
+
+  <!-- API Joke Section -->
+  <div class="api-section">
+    <h2>😂 Highlight of the Day</h2>
+    <button class="joke-button" onclick="fetchJoke()">Get a Joke</button>
+    <p id="joke"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
